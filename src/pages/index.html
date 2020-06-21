@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
+    <title>Simple editor</title>
     <meta name="description" content="Your project description" />
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -145,9 +145,15 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="editor">
+      <h1 class="editor__header">Simple editor</h1>
+      <form class="form">
+        <textarea aria-label="Enter your thoughts" class="form__textarea textarea--js" placeholder="Enter your thoughts"></textarea>
+        <div class="form__buttons">
+          <button class="button load--js">Load <span class="info--js"></span></button>
+          <button class="button button--save save--js">Save</button>
+        </div>       
+      </form>
+    </main>
   </body>
 </html>
